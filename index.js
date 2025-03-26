@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+app.get('', 'hellow')
 // Endpoint ל-GET שמחזיר את רשימת האפליקציות
 app.get('/apps', (req, res) => {
     const apps = [
